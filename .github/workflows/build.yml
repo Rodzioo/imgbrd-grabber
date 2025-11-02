@@ -1,17 +1,7 @@
 name: Build
-
-on:
-  push:
-    paths-ignore:
-      - 'docs/**'
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - 'docs/**'
-      - '**.md'
-    branches-ignore:
-      - crowdin
-
+  on:
+    workflow_dispatch trigger
+  
 env:
   QT_VERSION: 6.6.3
   QT_MODULES: qtmultimedia qtimageformats qtnetworkauth qtshadertools
